@@ -1,0 +1,33 @@
+.mainInfo {
+  padding: 20px;
+  font-family: 'BebasNeue';
+  font-size: 20px;
+  p {
+    width: 900px;
+    margin: auto;
+    text-align: justify;
+  }
+}
+
+.p {
+  margin-top: 20px !important;
+}
+
+@media (max-width: 1050px) {
+  .mainInfo p {
+    width: 600px;
+  }
+}
+
+@media (max-width: 750px) {
+  .mainInfo p {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainInfo p {
+    font-size: 16px;
+    width: 90%;
+  }
+}

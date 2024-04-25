@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  padding: 20px;
+  z-index: 2;
+  color: white;
+  a {
+    font-size: 20px;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'BebasNeue';
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@media (max-width: 700px) {
+  .container a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container a {
+    font-size: 10px;
+  }
+}

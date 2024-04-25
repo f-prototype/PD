@@ -1,0 +1,49 @@
+.headerImage {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #000;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.headerText {
+  color: #fff;
+  font-family: 'BebasNeue';
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  z-index: 3;
+}
+
+@media (max-width: 735px) {
+  .headerImage {
+    height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .headerImage {
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerText {
+    font-size: 50px;
+  }
+}

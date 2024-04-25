@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'BebasNeue';
+  background-color: #282828;
+  color: #c1c1c1;
+}
+
+.contactsContainer {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: #c1c1c1;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    justify-content: flex-start;
+    p {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    p {
+      font-size: 14px;
+    }
+  }
+  .contactsContainer h5 {
+    font-size: 16px;
+  }
+  .contacts a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 445px) {
+  .contactsContainer {
+    position: static;
+    h5 {
+      margin-top: 20px;
+    }
+  }
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
