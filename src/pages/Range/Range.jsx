@@ -3,8 +3,15 @@ import cls from './Range.module.scss';
 import { MainImage } from '../../components/MainImage/MainImage';
 import image from '../../images/range.jpg';
 import { ListItem } from '../../components/ListItem/ListItem';
+import micro from '../../images/micro1.jpg';
+import micro2 from '../../images/micro2.jpg';
+import micro3 from '../../images/micro3.jpg';
+import micro4 from '../../images/micro4.jpg';
+import micro5 from '../../images/micro5.jpg';
+import micro6 from '../../images/micro6.jpg';
 
 export const Range = () => {
+  const micros = [micro, micro2, micro3, micro4, micro5, micro6];
   return (
     <div className={cls.container}>
       <MainImage image={image} text={'Ассортимент'} />
@@ -34,6 +41,16 @@ export const Range = () => {
           выращивания и декоративных культур, помогая пользователю выращивать и
           желаемые комнатные растения.
         </p>
+        <h2 className={cls.title}>Наша микрозелень</h2>
+        <div className={cls.imageBox}>
+          {micros.map((el) => {
+            return (
+              <div className={cls.imgContainer}>
+                <img src={el} alt="micro" className={cls.microImg} />;
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
