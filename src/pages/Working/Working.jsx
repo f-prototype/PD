@@ -11,12 +11,12 @@ export const Working = () => {
       <MainImage image={work} text={'Прототип ситифермы'} />
       <h2 className={cls.title}>Наш буклет</h2>
       <div className={cls.flierContainer}>
-        <embed
+        <iframe
           src={flier}
           type="application/pdf"
           width="100%"
           height="100%"
-        ></embed>
+        ></iframe>
       </div>
     </div>
   );
