@@ -11,6 +11,7 @@ export const Project = () => {
   return (
     <div className={cls.container}>
       <MainImage image={image} text={'Наш Проект'} />
+      {/* <h2 className={cls.title}>Тезисы</h2> */}
       <div className={cls.mainInfo}>
         <div className={cls.info}>
           <img src={idea} className={cls.icon} alt="img" />

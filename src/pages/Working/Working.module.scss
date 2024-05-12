@@ -1,0 +1,25 @@
+.flierContainer {
+  width: 90%;
+  height: 700px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-family: 'BebasNeue';
+  letter-spacing: 5px;
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #000;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: 50px;
+    z-index: 1;
+  }
+}
